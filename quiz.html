@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<title>hompage-profile</title>
+<meta charset="utf-8">
+<script language="javascript">
+
+           function q1(){
+           var objName = document.getElementsByName("m");
+           for(var i=0;i<objName.length;i++){
+          if(objName[i].checked&&objName[i].value=="중문")
+          {alert(objName[i].value+"은(는) 제 전공입니다");
+          break;
+}
+          else  if(objName[i].checked){
+           alert(objName[i].value+"은(는) 제 전공이 아닙니다");
+           break;
+           }
+         }
+       }
+
+       function q2(){
+       var objName = document.getElementsByName("m");
+       for(var i=0;i<objName.length;i++){
+      if(objName[i].checked&&objName[i].value=="일확천금")
+      {alert(objName[i].value+"은(는) 제 목표입니다");
+      break;
+}
+      else  if(objName[i].checked){
+       alert(objName[i].value+"은(는) 제 목표가 아닙니다");
+       break;
+       }
+     }
+   }
+     </script>
+<link href="style.css" rel="stylesheet">
+
+<style>
+
+</style>
+</head>
+
+<body>
+<h1><a href=1main.html>LEE GYEONGMIN</a></h1>
+<div id="grid">
+
+<div id="q"style="text-align:center;">
+  <h2> quiz</h2>
+  <h2> 1. 저의 대학교 전공은 ? </h2>
+      <input type="radio" name="m" value="중문" >중문
+      <input type="radio" name="m" value="경영" >경영
+      <input type="radio" name="m" value="행정" >행정
+      <br>
+      <input type="button" value="답안지 제출" onclick="q1()">
+      <h2> 2. 저의 인생목표는 ? </h2>
+          <input type="radio" name="m" value="매일 성실히" >매일성실히
+          <input type="radio" name="m" value="일확천금" >일확천금
+
+          <br>
+          <input type="button" value="답안지 제출" onclick="q2()">
+
+
+
+</div>
+</div>
+
+<h1 id="continue">TO BE CONTINUED</h1>
+  </body>
+
+
+</html>

@@ -1,0 +1,42 @@
+@font-face{
+
+/*  src:local("C:\Users\glori\OneDrive\바탕 화면\MyWebPage\fonts\ka1.woff");
+  font-family:"ka1";*/
+
+  font-family: 'ka1';
+ src: url('C:/Users/glori/OneDrive/바탕 화면/MyWebPage/ka1.woff') format('woff');
+
+}
+body{
+  background-color: #0B6EEF;
+}
+
+h1{
+  font-family:'ka1';
+  font-size: 60px;
+  margin:20px;
+  color:black;
+
+}
+#continue{
+  font-size:60px;
+  text-align: right;
+  margin:20px;
+}
+#grid > div{
+  /*font-size: 2.5em;*//*비율대로 크기 조절하려면 어떻게 해야될까?*/
+  /*위처럼 하면 박스들 크기가 안맞음*/
+  padding:0.5em;
+  background:#ff6666;
+  text-align : center;
+    border:4px solid gold;
+    font-family:'ka1';
+
+}
+#q {
+  min-height: 400px;
+}
+/*눌렀을때 색상 바뀜 방지*/
+a:link{text-decoration: none; color:black;}
+a:visited{text-decoration: none; color:black;}
+a:hover{text-decoration: none; color:black;}
